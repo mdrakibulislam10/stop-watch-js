@@ -10,7 +10,7 @@ const setInnerText = (value, id) => {
 const startBtn = () => {
     const previousTime = getInnerText("time");
     let currentTime = previousTime;
-    let interValId = setInterval(() => {
+    const interValId = setInterval(() => {
         currentTime++;
         // console.log(currentTime);
         setInnerText(currentTime, "time");
